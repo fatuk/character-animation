@@ -1,0 +1,261 @@
+body {
+  font-family: sans-serif;
+}
+.static-character {
+  background: url('../img/full_body.svg') no-repeat center;
+  width: 128px;
+  height: 128px;
+  float: left;
+}
+.hide {
+  display: none;
+}
+.character {
+  width: 128px;
+  height: 128px;
+  position: relative;
+  float: left;
+  background: orange;
+}
+.character > * {
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.character__arm-far {
+  background: url('../img/arm_far.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+  top: 55px;
+  left: 34px;
+  -webkit-transform: rotate(-28deg);
+  -ms-transform: rotate(-28deg);
+  transform: rotate(-28deg);
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  width: 11px;
+  height: 30px;
+}
+.character__torso {
+  background: url('../img/torso.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+  top: 33px;
+  left: -1px;
+}
+.character__arm-near {
+  background: url('../img/arm_near.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+  top: 33px;
+  left: -7px;
+}
+.character__face {
+  background: url('../img/face.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+  top: 7px;
+}
+.character__hair {
+  background: url('../img/hair.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+}
+.character__eyes {
+  background: url('../img/eyes.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+  top: 6px;
+  left: 2px;
+}
+.character__mouth {
+  background: url('../img/mouth.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+  top: 15px;
+  left: 2px;
+  z-index: 10;
+}
+.character__leg-far {
+  background: url('../img/leg_far.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+  top: 50px;
+}
+.character__pelvis {
+  background: url('../img/pelvis.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+  top: 40px;
+}
+.character__leg-near {
+  background: url('../img/leg_near.svg') no-repeat center;
+  width: 72px;
+  height: 72px;
+  top: 50px;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes hiFive {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, -28deg);
+    transform: rotate3d(0, 0, 1, -28deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, -130deg);
+    transform: rotate3d(0, 0, 1, -130deg);
+  }
+  35% {
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+  }
+  45% {
+    -webkit-transform: rotate3d(0, 0, 1, -130deg);
+    transform: rotate3d(0, 0, 1, -130deg);
+  }
+  55% {
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+  }
+  65% {
+    -webkit-transform: rotate3d(0, 0, 1, -130deg);
+    transform: rotate3d(0, 0, 1, -130deg);
+  }
+  70% {
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, -28deg);
+    transform: rotate3d(0, 0, 1, -28deg);
+  }
+}
+@keyframes hiFive {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, -28deg);
+    transform: rotate3d(0, 0, 1, -28deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, -130deg);
+    transform: rotate3d(0, 0, 1, -130deg);
+  }
+  35% {
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+  }
+  45% {
+    -webkit-transform: rotate3d(0, 0, 1, -130deg);
+    transform: rotate3d(0, 0, 1, -130deg);
+  }
+  55% {
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+  }
+  65% {
+    -webkit-transform: rotate3d(0, 0, 1, -130deg);
+    transform: rotate3d(0, 0, 1, -130deg);
+  }
+  70% {
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, -28deg);
+    transform: rotate3d(0, 0, 1, -28deg);
+  }
+}
+@-webkit-keyframes mouseIdle {
+  10% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  90% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+@keyframes mouseIdle {
+  10% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  90% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+@-webkit-keyframes faceIdle {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes faceIdle {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.hi-five .character__arm-far {
+  -webkit-animation-name: hiFive;
+  animation-name: hiFive;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.mouse-idle .character__mouth {
+  -webkit-animation-name: mouseIdle;
+  animation-name: mouseIdle;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.face-idle .character__face {
+  -webkit-animation-name: faceIdle;
+  animation-name: faceIdle;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/*# sourceMappingURL=../css/app.css.map */
