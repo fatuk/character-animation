@@ -1,0 +1,66 @@
+@width: 128px;
+@height: 128px;
+.hide {
+	display: none;
+}
+.character {
+	width: @width;
+	height: @height;
+	position: relative;
+	float: left;
+	background: orange;
+	& > * {
+		position: absolute;
+		transition: transform 1s;
+	}
+	&__arm-far {
+		.img('arm_far.svg');
+		top: 55px;
+		left: 34px;
+		transform: rotate(-28deg);
+		transform-origin: 50% 0;
+		// background: blue;
+		width: 11px;
+		height: 30px;
+	}
+	&__torso {
+		.img('torso.svg');
+		top: 33px;
+		left: -1px;
+	}
+	&__arm-near {
+		.img('arm_near.svg');
+		top: 33px;
+		left: -7px;
+	}
+	&__face {
+		.img('face.svg');
+		top: 7px;
+	}
+	&__hair {
+		.img('hair.svg');
+	}
+	&__eyes {
+		.img('eyes.svg');
+		top: 6px;
+		left: 2px;
+	}
+	&__mouth {
+		.img('mouth.svg');
+		top: 15px;
+		left: 2px;
+		z-index: 10;
+	}
+	&__leg-far {
+		.img('leg_far.svg');
+		top: 50px;
+	}
+	&__pelvis {
+		.img('pelvis.svg');
+		top: 40px;
+	}
+	&__leg-near {
+		.img('leg_near.svg');
+		top: 50px;
+	}
+}

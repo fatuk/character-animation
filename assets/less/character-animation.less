@@ -1,0 +1,71 @@
+.animated {
+	animation-duration: 1s;
+  	animation-fill-mode: both;
+  	animation-iteration-count: infinite;
+}
+@keyframes hiFive {
+	0% {
+		transform: rotate3d(0, 0, 1, -28deg);
+	}
+	25% {
+		transform: rotate3d(0, 0, 1, -130deg);
+	}
+	35% {
+		transform: rotate3d(0, 0, 1, -90deg);
+	}
+	45% {
+		transform: rotate3d(0, 0, 1, -130deg);
+	}
+	55% {
+		transform: rotate3d(0, 0, 1, -90deg);
+	}
+	65% {
+		transform: rotate3d(0, 0, 1, -130deg);
+	}
+	70% {
+		transform: rotate3d(0, 0, 1, -90deg);
+	}
+	100% {
+		transform: rotate3d(0, 0, 1, -28deg);
+	}
+}
+@keyframes mouseIdle {
+	10% {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	60% {
+		transform: rotate3d(0, 0, 1, -10deg);
+	}
+	90% {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
+@keyframes faceIdle {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(1px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+.hi-five {
+	.character__arm-far {
+		animation-name: hiFive;
+		.animated();
+	}
+}
+.mouse-idle {
+	.character__mouth {
+		animation-name: mouseIdle;
+		.animated();
+	}
+}
+.face-idle {
+	.character__face {
+		animation-name: faceIdle;
+		.animated();
+	}
+}

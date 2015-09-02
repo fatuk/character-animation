@@ -1,0 +1,7 @@
+// Background image
+.img(@img) {
+	@img-path: '../img/@{img}';
+	background: url(@img-path) no-repeat center;
+	width: image-width(@img-path);
+	height: image-height(@img-path);
+}
